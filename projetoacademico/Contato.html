@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="icon" type="imagem/png" href="icone_site.jpg"/>
+		<title>Pagina de contato</title>
+        		<meta charset="utf-8">
+        
+    <style>
+        *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+			}
+			html {
+    			-webkit-text-size-adjust: 100%;
+			}
+			body {
+			font-family: Lato, sans-serif;
+			
+			/* background-color: #f1f1f1; */
+            background-image: url(background_site.png);
+            
+			}
+            
+            .cabecalho{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				padding: 12px;
+				background-color: #14824e;
+			}
+			.cabecalho-menu{
+				display: flex;
+				gap: 32px;
+			}
+			.cabecalho-menu-item{
+				color: aliceblue;
+				font-weight: 400;
+				font-size: 18px;
+			}
+            form {
+            position: absolute;
+            max-width: 500px;
+            width: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            margin: 10px 0;
+            background-color: white;
+            border-radius: 20px;
+            }
+            form h3 {
+            text-align: center;
+            color: #00bf80;
+            }
+            form input[type=text],
+            form input[type=number]{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 15px;
+            width: 100%!important;
+            grid-column: span 12/span 12;
+            box-sizing: border-box;
+            }
+            
+            form input[type=submit]{
+            width: 100%;
+            height: 40px;
+            margin: 10px;
+            background-color: #00bf80;
+            cursor: pointer;
+            border-radius: 20px;
+            color: #ffffff!important;
+            }
+            footer{
+				display: block;
+			}
+			.rodape{
+				overflow: hidden;
+				margin: 0 auto;
+				width: 100%;
+				color: #f1f1f1;
+				background:#303640;
+				position: fixed;
+    			bottom: 0;
+				--header-height: 150px;
+    			--header-sticky-height: 50px;
+			}
+			.rodape-escrito{
+				padding-top: 15px;
+				height: 48px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 14px!important;
+				color: #ffffff;
+			}
+			
+
+    </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class = "cabecalho-menu">
+                <a class = "cabecalho-menu-item" href="pagina_inicial.html" >Home</a>
+                <a class = "cabecalho-menu-item"href="empresa.html">Empresa</a>
+                <a class = "cabecalho-menu-item"href="Contato.html">Contato</a>
+            </nav><hr>
+    </header><hr>
+    <form name="formuser" action="enviar.php" method="post">
+        <h3> Formulário de Contato: </h3>
+        <p> Email:<input type="text" name="email" placeholder="Coloque seu email..." /></p>
+        <p> Telefone:<input type="number" name="senha" placeholder="Coloque seu telefone..." /></p>
+        <p> Mensagem:<input type="text" placeholder="Deixe sua mensagem..." /></p>
+        <input type="submit">
+        </form>
+
+        <footer id="rodape" class="rodape" itemscope="" itemtype="https://schema.org/WPFooter">
+			<p class= "rodape-escrito">São Paulo | @2022  </p>
+		</footer>
+    </body>
+    
+
+</html>

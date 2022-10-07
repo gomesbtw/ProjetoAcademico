@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="icon" type="imagem/png" href="icone_site.jpg"/>
+		<title> Empresa</title>
+        		<meta charset="utf-8">
+		<style>
+			*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+			}
+			html {
+    			-webkit-text-size-adjust: 100%;
+			}
+			body {
+			font-family: Lato, sans-serif;
+			
+			/* background-color: #f1f1f1; */
+			background-image: url(background_site.png);
+			}
+			.cabecalho{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+				padding: 12px;
+				background-color: #14824e;
+			}
+			.cabecalho-menu{
+				display: flex;
+				gap: 32px;
+			}
+			.cabecalho-menu-item{
+				color: aliceblue;
+				font-weight: 400;
+				font-size: 18px;
+			}
+            .conteudo{
+				border-top: 0.4px solid aliceblue ;
+			}
+			.conteudo-principal{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-around;
+			}
+			
+			.conteudo-principal-titulo{
+				font-weight: 400;
+				font-size: 64px;
+				color: #303640;
+			}
+			p{
+                margin: 0 0 1.5rem;
+            }
+            h2{
+                
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 1.3;
+            letter-spacing: 0em;
+            margin-bottom: 1rem;
+
+            }
+            p{
+                margin: 0 0 1.5rem;
+                display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+            footer{
+				display: block;
+			}
+			.rodape{
+				overflow: hidden;
+				margin: 0 auto;
+				width: 100%;
+				color: #f1f1f1;
+				background:#303640;
+				position: fixed;
+    			bottom: 0;
+				--header-height: 150px;
+    			--header-sticky-height: 50px;
+			}
+			.rodape-escrito{
+				padding-top: 15px;
+				height: 48px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 14px!important;
+				color: #ffffff;
+			}
+			
+          
+        </style>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class = "cabecalho-menu">
+                <a class = "cabecalho-menu-item" href="pagina_inicial.html" >Home</a>
+                <a class = "cabecalho-menu-item"href="empresa.html">Empresa</a>
+                <a class = "cabecalho-menu-item"href="Contato.html">Contato</a>
+            </nav><hr>
+    </header><hr>
+    <main class ="conteudo">
+        <section class ="conteudo-principal">
+            <div class ="conteudo-principal-escrito">
+                
+                <h2 class ="conteudo-principal-subtitulo">
+                    Missão 
+                </h2>
+                <p class='conteudo-principal-paragrafo'>Atender o cliente de forma ágil e simples e entregar um produto que atenda todas as suas necessidades e superar todas expectativas.</p>
+                <h2 class ="conteudo-principal-subtitulo">
+                    Visão
+                </h2>
+                <p class='conteudo-principal-paragrafo'>Ser reconhecida por oferecer produtos diferenciados, inovação, qualidade e com a excelência nos serviços prestados.</p>
+                <h2 style="text-align:left ;">
+                    Valores
+                </h2>
+                <p class='conteudo-principal-paragrafo'>Confiabilidade;</p>
+                <p class='conteudo-principal-paragrafo'>Qualidade;</p> 
+                <p class='conteudo-principal-paragrafo'>Eficiência</p> 
+            </div>
+        </section>
+    </main>
+        <footer id="rodape" class="rodape" itemscope="" itemtype="https://schema.org/WPFooter">
+			<p class= "rodape-escrito">São Paulo | @2022  </p>
+		</footer>
+    </body>
+
+</html>
